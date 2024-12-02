@@ -1,0 +1,95 @@
+/* Basic styling to remove margin and padding for the body */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full height for scrolling */
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure header stays at the top of the page */
+header {
+  position: relative;
+  z-index: 10; /* Keeps it above content */
+}
+
+/* Content section styling */
+.content {
+  padding: 0px;
+  text-align: left;
+  display: grid;
+  padding-left: 50px;
+  box-sizing: border-box; /* Prevents padding from affecting layout */
+  margin-top: 0px; /* Space to account for header height */
+}
+
+/* Styling for the section where the list of rides appears */
+.rides-list {
+  margin-bottom: 20px;
+}
+
+.ride-item {
+  margin: 10px 0;
+}
+
+/* Individual sections for each ride */
+.ride-section {
+  margin-top: 1px;
+  padding: 5px;
+  border: 3px solid #221616;
+  border-radius: 5px;
+  background-color: #ed2929;
+  margin-bottom: 50px; /* Space between sections */
+  width: 100%;
+  max-width: 1300px; /* Keeps sections from becoming too wide */
+}
+
+/* Flexbox container to align ride details */
+.ride-details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 30px; /* Prevents sections from getting stuck at the bottom */
+}
+
+/* Section titles */
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 32px;
+  border-radius: 0.5rem;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: #6191c2;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+/* Page-wide styling to ensure smooth scrolling */
+html, body {
+  height: 100%; /* Ensures full height for scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  display: flex;
+  flex-direction: column; /* Ensures the page grows vertically */
+}
+
+body {
+  transition: background-color 0.3s ease;
+}
+
+/* Footer stays at the bottom if the content isn't enough to fill the page */
+footer {
+  margin-top: auto; /* Ensures footer is at the bottom */
+}
+

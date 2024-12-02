@@ -1,0 +1,84 @@
+.calculator {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 2rem;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: #be8888; /* Default background color */
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #f50000;
+}
+
+/* Active button (when clicked) */
+button:active {
+  background-color: #ccc;
+}
+
+/* Focused button (when clicked, removes outline) */
+button:focus {
+  outline: none;
+}
+
+/* Special styling for the 'C' button */
+button.clear {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.clear:hover {
+  background-color: #c0392b;
+}
+
+/* Special styling for the '=' button */
+button.equals {
+  background-color: #2ecc71;
+  color: white;
+}
+
+button.equals:hover {
+  background-color: #27ae60;
+}
+
+/* Styling for the operator buttons (e.g., +, -, *, /) */
+button:nth-child(4n) {
+  background-color: #f39c12;
+  color: white;
+}
+
+button:nth-child(4n):hover {
+  background-color: #e67e22;
+}
